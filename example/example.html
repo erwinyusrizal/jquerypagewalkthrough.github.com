@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8">
+    <title>jQuery Page Walkthrough</title>
+    <meta name="description" content="jQuery Page Walkthrough">
+    <meta name="author" content="Erwin Yusrizal">
+
+<!-- Standard CSS Includes -->
+<link type="text/css" rel="stylesheet" href="../plugins/css/jquery.pagewalkthrough.css" />
+<link type="text/css" rel="stylesheet" href="style.css"/>
+
+<!-- Standard Script Includes -->
+<script type="text/javascript" src="../plugins/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../plugins/jquery.pagewalkthrough-1.1.0.js"></script>
+<script type="text/javascript" src="page.js"></script>
+
+</head>
+
+<body>
+
+<div id="container">
+	<div id="header">
+		<div class="wrapper clearfix">
+			<div class="logo">
+				<a href="#">jQuery Page Walkthrough</a>
+			</div>
+			<div class="main-menu">
+				<ul>
+					<li><a href="javascript:;" id="open-walkthrough">Walkthrough</a></li>
+					<li><a href="javascript:;" id="open-callbacks">Callbacks</a></li>
+					<li><a href="javascript:;" id="open-methods">Methods</a></li>
+					<li class="last"><a href="javascript:;" id="open-extra">Extra</a></li>
+				</ul>
+			</div>
+			<div class="search-box">
+				<form>
+					<div class="form-element clearfix">
+						<div class="inputText search">
+							<input type="text" value="Search..." />
+						</div>				
+						<input type="submit" value="search" class="btnSearch"/>
+					</div>
+				</form>				
+			</div>
+		</div>
+	</div><!-- header -->
+
+	<div id="content">
+		<div class="wrapper clearfix">
+			<div class="content-left">
+				<div class="page-description" id="page-desc">
+					<h2><img src="images/send_us_your_enquiry.gif"></h2>
+					<p>Whether you're interested in working for us, engaging us to work for you, or you want to find out more about our great work for your next news story, please tweet us, call us, visit us or submit your enquiry using the form below.</p>
+				</div>
+
+				<div class="contact-form">
+					<div class="mark">
+        				<em>*</em> Mandatory fields
+        			</div>
+					<form id="contact-form">
+						<div class="two-col">
+							<div class="col-left">
+								<div class="form-element clearfix" id="enquiry-type">
+									<label>Subject of enquiry: <em>*</em></label>
+									<select>
+										<option value="0">please select</option>
+										<option value="1">Sales Enquiry</option>
+										<option value="2">Employment Enquiry</option>
+										<option value="3">Media Enquiry</option>
+									</select>
+								</div>
+								<div class="form-element clearfix" id="enquiry-email">
+									<label>Email Addreess <em>*</em></label>
+									<div class="inputText">
+										<input type="text">
+									</div>
+									
+								</div>
+							</div>
+							<div class="col-right">
+								<div class="form-element clearfix" id="enquiry-name">
+									<label>Name <em>*</em></label>
+									<div class="inputText">
+										<input type="text">
+									</div>
+									
+								</div>
+								<div class="form-element clearfix" id="enquiry-phone">
+									<label>Phone <em>*</em></label>
+									<div class="inputText">
+										<input type="text">
+									</div>
+									
+								</div>
+							</div>
+						</div>
+
+						<textarea id="enquiry-message"></textarea>
+						<input type="submit" value="Send Enquiry" class="button">
+					</form>
+				</div>
+
+
+				<div class="divider-dotted"></div>
+
+				<div class="social-media clearfix">
+					<ul>
+						<li id="email-us">
+							<h3>Email us</h3>
+							<span><a href="javascript:;">hello@example.com</a></span>
+						</li>
+						<li>
+							<h3>Tweet us</h3>
+							<span><a href="javascript:;" class="twitter">twitter</a></span>
+						</li>
+						<li>
+							<h3>Facebook</h3>
+							<span><a href="javascript:;" class="facebook">facebook</a></span>
+						</li>
+					</ul>
+				</div>
+
+			</div><!-- content left -->			
+
+			<div class="content-right">
+
+				<div class="addressWrapper clearfix">
+
+					<div class="officeAddress">
+			            <h3 class="titleComponent">
+			                Indonesia:
+			                <a target="_blank" href="javascript:;">view map</a>
+			            </h3>
+			            <div class="officeAddressContentWrapper">
+			                <span class="address">
+			                    A Nerd Street 06/12 pm</span>
+			                <ul class="phoneAndFax">
+			                    <li>Phone : <span>
+			                        (01) 2345 6789
+			                    </span></li>
+			                    <li>Fax : <span>
+			                        (01) 2345 6789</span></li>
+			                </ul>
+			            </div>
+			        </div>
+
+			        <div class="divider-dotted"></div>
+
+			        <div class="officeAddress">
+			            <h3 class="titleComponent">
+			                Singapore:
+			                <a target="_blank" href="javascript:;">view map</a>
+			            </h3>
+			            <div class="officeAddressContentWrapper">
+			                <span class="address">
+			                    A Geek Street 06/12 pm</span>
+			                <ul class="phoneAndFax">
+			                    <li>Phone : <span>
+			                        (02) 2345 6789
+			                    </span></li>
+			                    <li>Fax : <span>
+			                        (02) 2345 6789</span></li>
+			                </ul>
+			            </div>
+			        </div>
+
+			        <div class="divider-dotted"></div>
+
+			        <div class="officeAddress">
+			            <h3 class="titleComponent">
+			                Australia
+			                <a target="_blank" href="javascript:;">view map</a>
+			            </h3>
+			            <div class="officeAddressContentWrapper">
+			                <span class="address">
+			                    A Lorem ipsum Street 123x</span>
+			                <ul class="phoneAndFax">
+			                    <li>Phone : <span>
+			                        (03) 2345 6789
+			                    </span></li>
+			                    <li>Fax : <span>
+			                        (03) 2345 6789</span></li>
+			                </ul>
+			            </div>
+			        </div>
+			    </div><!-- address wrapper -->
+
+			</div><!-- content right -->
+		</div>
+	</div><!-- content -->
+
+
+	<div id="footer">
+		<div class="footerWrapper">
+			<div class="officeAddress">
+				<div class="item" id="indonesia">
+                    <h5>
+                        Indonesia:
+                        <span>
+                            <a target="_blank" href="javascript:;">google map</a>
+                        </span>
+                    </h5>
+                    A Nerd Street 06/12pm
+                    <span class="spPhone">Phone : (01) 1234 5678</span> 
+                    <span class="spPhone">Fax : (01) 1234 5678</span>
+
+				</div>
+
+				<div class="item" id="singapore">
+                    <h5>
+                        Singapore:
+                        <span>
+                            <a target="_blank" href="javascript:;">google map</a>
+                        </span>
+                    </h5>
+                    A Geek Street 06/12 pm
+                    <span class="spPhone">Phone : (02) 1234 5678</span> 
+                    <span class="spPhone">Fax : (02) 1234 5678</span>
+                </div>
+
+                <div class="item" id="australia">
+                    <h5>
+                        Australia
+                        <span>
+                            <a target="_blank" href="javascript:;">google map</a>
+                        </span>
+                    </h5>
+                    Lorem ipsum Street 123x
+                    <span class="spPhone">Phone : (03) 1234 5678</span> 
+                    <span class="spPhone">Fax : (03) 1234 5678</span>
+                </div>
+
+			</div>
+			<div class="divider-dotted"></div>
+			<div class="footer-menu">
+	            <div id="privacyContainer">
+	                <ul>
+	                    
+	                    <li>
+	                        <a href="#" id="privacy">Privacy Policy</a></li>
+	                    
+	                    <li>
+	                        <a href="#" id="sitemap">Site Map</a></li>
+	                </ul>
+	                <span class="copyRight">&copy;Copyright 2013 jQuery Page Walkthrough. All Rights Reserved.</span>
+	            </div>
+	            
+	        </div>
+		</div>
+	</div><!-- footer -->	
+</div><!-- container -->
+
+
+<!-- walkthrough -->
+<div id="walkthrough">
+	<div id="type-modal" style="display:none;">
+		<p class="tooltipTitle">Walkthrough Type Modal</p>
+        <p>Each step has numerous configuration options to fine-tune its position and appearance.  This step demonstrates the "modal" option which doesn't highlight any part of the page.system for designing interactive, multimedia, educational walkthroughs.</p>
+        <br>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="type-tooltip" style="display:none;">
+		<p class="tooltipTitle">Walkthrough Type Tooltip &amp; Highlighting Area</p>
+        <p>Walkthough can highlight any part of the page and link it to content.  Since the highlight is based on standard CSS selectors, they will adjust if the page changes.</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="type-tooltip-top" style="display:none;">
+		<p class="tooltipTitle">Tooltip Top Position</p>
+        <p>Walkthough is defined as a series of steps, each with custom content. The content can be placed above (like here)...</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="type-tooltip-right" style="display:none;">
+		<p class="tooltipTitle">Tooltip Right Position</p>
+        <p>...on the right...</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="type-tooltip-bottom" style="display:none;">
+		<p class="tooltipTitle">Tooltip Bottom Position</p>
+        <p>...on the bottom...</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="type-tooltip-left" style="display:none;">
+		<p class="tooltipTitle">Tooltip Left Position</p>
+        <p>...or on the left...</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="type-no-highlight" style="display:none;">
+		<p class="tooltipTitle">Walkthrough Type No Highlight</p>
+        <p>Walkthrough can be used without highlighting area</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="tooltip-draggable" style="display:none;">
+		<p class="tooltipTitle">Tooltip Draggable</p>
+        <p>Walkthrough tooltip draggable...</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="nohighlight-draggable" style="display:none;">
+		<p class="tooltipTitle">NoHighlight Draggable</p>
+        <p>Walkthrough no highlight drag and drop...</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="content-rotation" style="display:none;">
+		<p class="tooltipTitle">Content Rotation</p>
+        <p>All walkthrough type support Content Rotation Feature</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="highlight-accessable" style="display:none;">
+		<p class="tooltipTitle">Tooltip Type Accessable Highlight Area</p>
+        <p>You can set the highlight area to be accessable</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="auto-scroll" style="display:none;">
+		<p class="tooltipTitle">Auto Scroll</p>
+        <p>Auto scrolling page to the walkthrough step, this step will show you autoScroll options set FALSE which means it will not autoscroll for this step</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="stay-focus" style="display:none;">
+		<p class="tooltipTitle">Stay Focus to The Walkthrough</p>
+        <p>Walkthrough has option to force user stay focus on the walkthrough step, try to scroll down on this step</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="done-walkthrough" style="display:none;">
+		<p class="tooltipTitle">DONE...!!!</p>
+        <p>Woohoo...It's Done!, Now please click 'close' button at top right corner to close this walkthrough</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+	</div>
+</div>
+
+
+<!-- callback -->
+<div id="callbacks">
+	<div id="callback-beforeshow-aftershow" style="display:none;">
+		<p class="tooltipTitle">onBeforeShow &amp; onAfterShow </p>
+        <p>This callback will be executed only on before show &amp; on after show the first step</p>
+        <br>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="callback-restart" style="display:none;">
+		<p class="tooltipTitle">onRestart</p>
+        <p>This callback will be executed when walkthrough is restarted</p>
+        <br>
+        <a href="javascript:;" class="restart-step" style="float:left;">Restart</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="callback-onleave" style="display:none;">
+		<p class="tooltipTitle">onLeave</p>
+        <p>This callback will be executed on LEAVE this step </p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="callback-onenter" style="display:none;">
+		<p class="tooltipTitle">onEnter</p>
+        <p>This callback will be executed on ENTER this step </p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="callback-onclose" style="display:none;">
+		<p class="tooltipTitle">onClose</p>
+        <p>This callback will be executed on walkthrough close. Now try to close the walkthrough now..</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="callback-oncookieload" style="display:none;">
+		<p class="tooltipTitle">onCookieLoad</p>
+        <p>On Cookie Load means when walkthrough has been closed it will set a cookie and tells the walkthrough to not load automaticly. Try to refresh the page to see onCookieLoad callback</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+	</div>
+</div>
+
+<!-- methods -->
+<div id="methods">
+	<div id="method-show" style="display:none;">
+		<p class="tooltipTitle">Method show</p>
+		<p>This method allows you to open page walkthrough</p>
+        <p><pre>$.pagewalkthrough('show', target)</pre></p>
+        <p>Target is your walkthrough ID, i.e: #selector</p>
+        <br>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="method-next" style="display:none;">
+		<p class="tooltipTitle">Method Next</p>
+		<p>This method allows you to go the NEXT step</p>
+        <p><pre>$.pagewalkthrough('next', event)</pre></p>
+        <p>Note: event is needed as a param to call next method</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="method-prev" style="display:none;">
+		<p class="tooltipTitle">Method Prev</p>
+		<p>This method allows you to go the PREVIOUS step</p>
+        <p><pre>$.pagewalkthrough('prev', event)</pre></p>
+        <p>Note: event is needed as a param to call prev method</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="method-restart" style="display:none;">
+		<p class="tooltipTitle">Method Restart</p>
+		<p>This method allows you to RESTART walkthrough</p>
+        <p><pre>$.pagewalkthrough('restart', event)</pre></p>
+        <p>Note: event is needed as a param to call restart method</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="method-close" style="display:none;">
+		<p class="tooltipTitle">Method Close</p>
+		<p>This method allows you to CLOSE walkthrough</p>
+        <p><pre>$.pagewalkthrough('close', target)</pre></p>
+        <p>Target is optional. It could be filled with walkthrough ID or leave it blank</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="method-ispagewalkthroughactive" style="display:none;">
+		<p class="tooltipTitle">Property: isPageWalkthroughActive</p>
+		<p>This property will return status of page walkthrough</p>
+        <p><pre>$.pagewalkthrough('isPageWalkthroughActive')</pre></p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="method-currindex" style="display:none;">
+		<p class="tooltipTitle">Property: currIndex</p>
+		<p>This property will return current index of current walkthrough step</p>
+        <p><pre>$.pagewalkthrough('currIndex')</pre></p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="method-getoptions" style="display:none;">
+		<p class="tooltipTitle">Property: getOptions</p>
+		<p>This property will return walkthrough options whether it an active walkthrough options or all walkthrough options</p>
+        <p><pre>$.pagewalkthrough('getOptions', activeWalkthrough)</pre></p>
+        <p>activeWalkthrough = true / false. By default it is FALSE, if set TRUE it will return current active walkthrough object, if FALSE it will return Array of all walkthrough options
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+	</div>
+</div>
+
+<!-- example -->
+<div id="extra">
+	<div id="ex-image" style="display:none;">
+		<p class="tooltipTitle">Image in Step Content</p>
+		<p>You can add image in step content.</p>
+		<img src="images/monster-inc.jpg">
+        <br>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="ex-video" style="display:none;">
+		<p class="tooltipTitle">Embedding Video</p>
+		<p>You can embedding video too...</p>
+		<iframe width="560" height="315" src="http://www.youtube.com/embed/8UVNT4wvIGY" frameborder="0" allowfullscreen></iframe>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="ex-validation" style="display:none;">
+		<p class="tooltipTitle">Step Validation</p>
+		<p>jQuery Page Walkthrough also supports powerful options for control-of-flow.  For example, this step won't let you proceed unless you fill in a valid phone number (numbers only)</p>
+        <br>
+        <a href="javascript:;" class="prev-step" style="float:left;">Prev Step</a>
+        <a href="javascript:;" class="next-step" style="float:right;">Next Step</a>
+	</div>
+	<div id="ex-done" style="display:none;">
+		<p class="tooltipTitle">Support</p>
+		<p>For future feature and issue support you can contact me at erwin.yusrizal@gmail.com</p>
+	</div>
+</div>
+
+</body>
+</html>
