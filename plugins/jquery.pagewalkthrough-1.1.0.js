@@ -278,7 +278,7 @@
 
 
             //check if use overlay      
-            if (opt.steps[_index].overlay != 'undefined' || opt.steps[_index].overlay) {
+            if (opt.steps[_index].overlay == 'undefined' || opt.steps[_index].overlay) {
                 overlayClass = 'overlay';
             } else {
                 overlayClass = 'noOverlay';
@@ -431,7 +431,7 @@
                 $('#jpWalkthrough').remove();
             }
 
-            if (opt.steps[_index].overlay != 'undefined' || opt.steps[_index].overlay) {
+            if (opt.steps[_index].overlay == 'undefined' || opt.steps[_index].overlay) {
                 showModal(true);
             } else {
                 showModal(false);
@@ -443,7 +443,7 @@
             }
 
 
-            if (opt.steps[_index].overlay != 'undefined' || opt.steps[_index].overlay) {
+            if (opt.steps[_index].overlay == 'undefined' || opt.steps[_index].overlay) {
                 noHighlight(true);
             } else {
                 noHighlight(false);
@@ -1097,7 +1097,8 @@
 					width: '320', //default width for each step,
 					draggable: false, // set true to set walkthrough draggable,
 					contentRotation: 0 //content rotation : i.e: 0, 90, 180, 270 or whatever value you add. minus sign (-) will be CCW direction
-               },             
+               },
+               overlay:true,             
                accessable: false, //if true - you can access html element such as form input field, button etc
                autoScroll: true, //is true - this will autoscroll to the arror/content every step 
                scrollSpeed: 1000, //scroll speed

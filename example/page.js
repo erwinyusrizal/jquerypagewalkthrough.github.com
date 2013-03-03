@@ -14,7 +14,8 @@ $(document).ready(function(){
                        offsetHorizontal: 0,
                        offsetVertical: 0,
                        width: '400'
-                   }                
+                   },
+                   overlay: false         
                },
                {
                    wrapper: '#page-desc',
@@ -27,7 +28,7 @@ $(document).ready(function(){
                        offsetHorizontal: 0,
                        offsetVertical: 0,
                        width: '500'
-                   }             
+                   }     
                },
                {
                    wrapper: '#email-us',
