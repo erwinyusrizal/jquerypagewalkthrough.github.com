@@ -7,7 +7,7 @@ Page Walkthrough is a flexible system for designing interactive, multimedia, edu
 To view jQuery Page Walkthrough example <a href="example/example.html">Click Here</a>
 <h2>Install:</h2>
 <pre>
-&lt;!-- CSS &gt-->
+&lt;!-- CSS --&gt;
 &lt;link type="text/css" rel="stylesheet" href="css/jquery.pagewalkthrough.css" /&gt;
 
 &lt;!-- JQUERY --&gt;
