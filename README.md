@@ -3,20 +3,19 @@ jquerypagewalkthrough.github.com
 
 Page Walkthrough is a flexible system for designing interactive, multimedia, educational walkthroughs.
 
-        <p>Page Walkthrough is a flexible system for designing interactive, multimedia, educational walkthroughs.</p>
-        <h2>Example:</h2>
-        <p>To view jQuery Page Walkthrough example <a href="example/example.html">Click Here</a></p>
-        <h2>Install:</h2>
-        <pre>
+<h2>Example:</h2>
+To view jQuery Page Walkthrough example <a href="example/example.html">Click Here</a>
+<h2>Install:</h2>
+<pre>
 &lt;!-- CSS &gt-->
 &lt;link type="text/css" rel="stylesheet" href="css/jquery.pagewalkthrough.css" /&gt;
 
 &lt;!-- JQUERY --&gt;
 &lt;script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 &lt;script type="text/javascript" src="js/jquery.pagewalkthrough-1.1.0.js"></script>
-        </pre>
-        <h2>jQuery Page Walkthrough Default Options:</h2>
-        <pre>
+</pre>
+<h2>jQuery Page Walkthrough Default Options:</h2>
+<pre>
 steps: [
 
   {
@@ -50,8 +49,8 @@ onAfterShow: null, // callback after page walkthrough loaded
 onRestart: null, //callback for onRestart walkthrough
 onClose: null, //callback page walkthrough closed
 onCookieLoad: null //when walkthrough closed, it will set cookie and tells the walkthrough to not load automaticly
-        </pre>
-        <h2>Public Methods:</h2>
+</pre>
+<h2>Public Methods:</h2>
 <pre>
 <strong>show</strong>       :   $.pagewalkthrough('show', target)
 This method allows you to open page walkthrough. Target is your walkthrough ID, i.e: #selector
