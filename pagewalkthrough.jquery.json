@@ -34,7 +34,7 @@
     "homepage": "http://jquerypagewalkthrough.github.com",
 	"demo": "http://jquerypagewalkthrough.github.com/example/example.html",
     "docs": "http://jquerypagewalkthrough.github.com",
-    "download": "https://github.com/erwinyusrizal/jquerypagewalkthrough.github.com/zipball/master",
+    "download": "https://github.com/jquerypagewalkthrough/jquerypagewalkthrough.github.com/zipball/master",
     "dependencies": {
         "jquery": ">=1.4"
     }
