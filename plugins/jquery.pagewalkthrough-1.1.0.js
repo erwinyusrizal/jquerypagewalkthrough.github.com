@@ -278,7 +278,7 @@
 
 
             //check if use overlay      
-            if (opt.steps[_index].overlay == 'undefined' || opt.steps[_index].overlay) {
+            if (opt.steps[_index].overlay == undefined || opt.steps[_index].overlay) {
                 overlayClass = 'overlay';
             } else {
                 overlayClass = 'noOverlay';
@@ -431,7 +431,7 @@
                 $('#jpWalkthrough').remove();
             }
 
-            if (opt.steps[_index].overlay == 'undefined' || opt.steps[_index].overlay) {
+            if (opt.steps[_index].overlay == undefined || opt.steps[_index].overlay) {
                 showModal(true);
             } else {
                 showModal(false);
@@ -443,7 +443,7 @@
             }
 
 
-            if (opt.steps[_index].overlay == 'undefined' || opt.steps[_index].overlay) {
+            if (opt.steps[_index].overlay == undefined || opt.steps[_index].overlay) {
                 noHighlight(true);
             } else {
                 noHighlight(false);
